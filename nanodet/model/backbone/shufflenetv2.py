@@ -7,7 +7,7 @@ from ..module.activation import act_layers
 model_urls = {
     "shufflenetv2_0.5x": "https://download.pytorch.org/models/shufflenetv2_x0.5-f707e7126e.pth",  # noqa: E501
     # "shufflenetv2_1.0x": "https://download.pytorch.org/models/shufflenetv2_x1-5666bf0f80.pth",  # noqa: E501
-    "shufflenetv2_1.0x": 'https://downloadx.getuploader.com/g/61adca9d-80d8-49fc-8eda-7159a010e467/akioka1962/261/checkpoint%20%281%29.pth',
+    "shufflenetv2_1.0x": 'https://download947.mediafire.com/cnifuvdpqjrg/xnoqzsjtzl2xupc/checkpoint+%281%29.pth',
     "shufflenetv2_1.5x": None,
     "shufflenetv2_2.0x": None,
 }

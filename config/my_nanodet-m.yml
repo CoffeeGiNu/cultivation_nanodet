@@ -1,5 +1,5 @@
 #Config File example
-save_dir: workspace/nanodet_m
+save_dir: /content/drive/MyDrive/nanodet_m
 model:
   arch:
     name: OneStageDetector

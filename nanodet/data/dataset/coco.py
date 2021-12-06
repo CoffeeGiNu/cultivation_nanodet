@@ -49,9 +49,8 @@ class CocoDataset(BaseDataset):
         return img_info
 
     def get_per_img_info(self, idx):
-        img_info = self.data_info.pop()
-        img_info = img_info[idx]
-        file_name = img_info["file_name"]
+        img_info = self.data_info[idx]
+        file_name = img_info["filename"]
         height = img_info["height"]
         width = img_info["width"]
         id = img_info["id"]

@@ -126,8 +126,11 @@ def main(args):
     )
 
     trainer.fit(task, train_dataloader, val_dataloader)
+    
+    return trainer.model
 
 
 if __name__ == "__main__":
     args = parse_args()
-    main(args)
+    model = main(args)
+    torch.save(model.state_dict(), 'workspace/nanodet_m/state_dict.pth')

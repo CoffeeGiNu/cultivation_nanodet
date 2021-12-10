@@ -41,6 +41,9 @@ def overlay_bbox_cv(img, dets, class_names, score_thresh):
         txt_size = cv2.getTextSize(text, font, 0.5, 2)[0]
         cv2.rectangle(img, (x0, y0), (x1, y1), color, 2)
 
+        if type(img) is list:
+            img = img.pop()
+
         cv2.rectangle(
             img,
             (x0, y0 - txt_size[1] - 1),

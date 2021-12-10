@@ -31,6 +31,10 @@ def overlay_bbox_cv(img, dets, class_names, score_thresh):
                 x0, y0, x1, y1 = [int(i) for i in bbox[:4]]
                 all_box.append([label, x0, y0, x1, y1, score])
     all_box.sort(key=lambda v: v[5])
+
+    if type(img) is list:
+            img = img.pop()
+
     for box in all_box:
         label, x0, y0, x1, y1, score = box
         # color = self.cmap(i)[:3]
@@ -40,10 +44,6 @@ def overlay_bbox_cv(img, dets, class_names, score_thresh):
         font = cv2.FONT_HERSHEY_SIMPLEX
         txt_size = cv2.getTextSize(text, font, 0.5, 2)[0]
         cv2.rectangle(img, (x0, y0), (x1, y1), color, 2)
-
-        if type(img) is list:
-            img = img.pop()
-
         cv2.rectangle(
             img,
             (x0, y0 - txt_size[1] - 1),

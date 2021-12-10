@@ -45,8 +45,8 @@ data:
   train:
     name: CocoDataset
     # class_names: *class_names
-    img_path: /home/studio-lab-user/unity_datasets/2e16d1ca-3a31-40f5-b48f-db7fa794ec24/RGB0a6dd498-3ac8-43f2-b441-0536bda03f37/  #Please fill in train image path
-    ann_path: /home/studio-lab-user/unity_datasets/2e16d1ca-3a31-40f5-b48f-db7fa794ec24/Datasetcbf5ef31-2170-4eab-a046-542f531c9de0/coco_labels.json  #Please fill in train xml path
+    img_path: /home/studio-lab-user/unity_datasets/fedfc935-1543-46d1-a768-b159e9bb22f4/RGBaa60f8d6-2b18-4ac8-90de-be73b5b72e27/  #Please fill in train image path
+    ann_path: /home/studio-lab-user/unity_datasets/fedfc935-1543-46d1-a768-b159e9bb22f4/Datasetb1fd4ca5-cc84-47fa-b6b3-81064f723bd5/coco_labels.json  #Please fill in train xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:
@@ -64,7 +64,7 @@ data:
   val:
     name: CocoDataset
     # class_names: *class_names
-    img_path: /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/RGB3b383646-92f7-4395-a763-a81cd8502c64/ #Please fill in val image path
+    img_path:  /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/RGB3b383646-92f7-4395-a763-a81cd8502c64/ #Please fill in val image path
     ann_path: /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/Dataset51eb0a2e-a072-473e-af73-06c2f21f120e/coco_labels.json #Please fill in val xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
@@ -76,7 +76,7 @@ device:
   batchsize_per_gpu: 64
 schedule:
   resume:
-    load_model: /home/studio-lab-user/cultivation_nanodet/workspace/nanodet_m/model_best/model_best.ckpt
+  load_model: /home/studio-lab-user/cultivation_nanodet/workspace/nanodet_m/model_best/model_best.ckpt
   optimizer:
     name: SGD
     lr: 0.14

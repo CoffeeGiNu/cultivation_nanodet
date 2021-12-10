@@ -64,7 +64,7 @@ data:
   val:
     name: CocoDataset
     # class_names: *class_names
-    img_path:  /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/RGB3b383646-92f7-4395-a763-a81cd8502c64/ #Please fill in val image path
+    img_path: /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/RGB3b383646-92f7-4395-a763-a81cd8502c64/ #Please fill in val image path
     ann_path: /home/studio-lab-user/unity_datasets/2216f634-b55b-428d-83c7-49022e1be1b2/Dataset51eb0a2e-a072-473e-af73-06c2f21f120e/coco_labels.json #Please fill in val xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
@@ -77,20 +77,20 @@ device:
 schedule:
   resume:
   load_model: /home/studio-lab-user/cultivation_nanodet/workspace/nanodet_m/model_best/model_best.ckpt
-  optimizer:
-    name: SGD
-    lr: 0.14
-    momentum: 0.9
-    weight_decay: 0.0001
-  warmup:
-    name: linear
-    steps: 300
-    ratio: 0.1
+optimizer:
+  name: SGD
+  lr: 0.14
+  momentum: 0.9
+  weight_decay: 0.0001
+warmup:
+  name: linear
+  steps: 300
+  ratio: 0.1
   total_epochs: 100
-  lr_schedule:
-    name: MultiStepLR
-    milestones: [130,160,175,185]
-    gamma: 0.1
+lr_schedule:
+  name: MultiStepLR
+  milestones: [130,160,175,185]
+  gamma: 0.1
   val_intervals: 10
 evaluator:
   name: CocoDetectionEvaluator

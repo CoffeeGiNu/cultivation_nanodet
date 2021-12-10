@@ -130,4 +130,4 @@ def main(args):
 
 if __name__ == "__main__":
     args = parse_args()
-    model = main(args)
+    main(args)

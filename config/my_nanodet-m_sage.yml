@@ -45,8 +45,8 @@ data:
   train:
     name: CocoDataset
     # class_names: *class_names
-    img_path: /home/studio-lab-user/unity_datasets/2e16d1ca-3a31-40f5-b48f-db7fa794ec24/RGB0a6dd498-3ac8-43f2-b441-0536bda03f37/  #Please fill in train image path
-    ann_path: /home/studio-lab-user/unity_datasets/2e16d1ca-3a31-40f5-b48f-db7fa794ec24/Datasetcbf5ef31-2170-4eab-a046-542f531c9de0/coco_labels.json  #Please fill in train xml path
+    img_path: /home/studio-lab-user/unity_datasets/7e470253-ec13-4f4d-b464-2f5628b08d92/RGBbf827ef2-fcd0-47e2-8ce1-f0189cc92cfb/  #Please fill in train image path
+    ann_path: /home/studio-lab-user/unity_datasets/7e470253-ec13-4f4d-b464-2f5628b08d92/Datasetd4bde0aa-0f36-4d00-b8d8-fc4e6003582f/coco_labels.json  #Please fill in train xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:
@@ -64,8 +64,8 @@ data:
   val:
     name: CocoDataset
     # class_names: *class_names
-    img_path: /home/studio-lab-user/unity_datasets/891b9546-6b51-4c36-9076-d9727e065238/RGB14541f74-3f32-458f-9c6d-9e2031d534f2/ #Please fill in val image path
-    ann_path: /home/studio-lab-user/unity_datasets/891b9546-6b51-4c36-9076-d9727e065238/Dataset5c67cdeb-b415-4f68-8b1b-f08a13ebdd03/coco_labels.json #Please fill in val xml path
+    img_path: /home/studio-lab-user/unity_datasets/26081eaa-59d5-4d37-b9cf-745bcee8e89a/RGB71b2ab94-95b2-452a-b6ab-cc6601d928af/ #Please fill in val image path
+    ann_path: /home/studio-lab-user/unity_datasets/26081eaa-59d5-4d37-b9cf-745bcee8e89a/Dataset97ab2b1d-31ad-4450-94e4-030fe6026033/coco_labels.json #Please fill in val xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:

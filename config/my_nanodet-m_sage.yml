@@ -45,8 +45,8 @@ data:
   train:
     name: CocoDataset
     # class_names: *class_names
-    img_path: /home/studio-lab-user/unity_datasets/7e470253-ec13-4f4d-b464-2f5628b08d92/RGBbf827ef2-fcd0-47e2-8ce1-f0189cc92cfb/  #Please fill in train image path
-    ann_path: /home/studio-lab-user/unity_datasets/7e470253-ec13-4f4d-b464-2f5628b08d92/Datasetd4bde0aa-0f36-4d00-b8d8-fc4e6003582f/coco_labels.json  #Please fill in train xml path
+    img_path: /home/studio-lab-user/unity_datasets/0e0ff4d0-8c5c-4dce-812f-1da379df980b/RGBa0ece7fa-98e5-4552-b69d-a9ff14beb9f2/  #Please fill in train image path
+    ann_path: /home/studio-lab-user/unity_datasets/0e0ff4d0-8c5c-4dce-812f-1da379df980b/Datasetaea36f3d-385c-4ddc-9bcc-143b882b4f76/coco_labels.json  #Please fill in train xml path
     input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:

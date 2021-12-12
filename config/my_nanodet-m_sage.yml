@@ -86,7 +86,7 @@ schedule:
     name: linear
     steps: 300
     ratio: 0.1
-  total_epochs: 25
+  total_epochs: 32
   lr_schedule:
     name: MultiStepLR
     milestones: [130,160,175,185]

@@ -47,7 +47,8 @@ data:
     # class_names: *class_names
     img_path: /content/drive/MyDrive/datasets/unity_tomato/train_mini/images/  #Please fill in train image path
     ann_path: /content/drive/MyDrive/datasets/unity_tomato/train_mini/bbox.json  #Please fill in train xml path
-    input_size: [1280, 960] #[w,h]
+    # input_size: [1280, 960] #[w,h]
+    input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:
       perspective: 0.0
@@ -66,7 +67,8 @@ data:
     # class_names: *class_names
     img_path: /content/drive/MyDrive/datasets/unity_tomato/valid/images/ #Please fill in val image path
     ann_path: /content/drive/MyDrive/datasets/unity_tomato/valid/bbox.json #Please fill in val xml path
-    input_size: [1280, 960] #[w,h]
+    # input_size: [1280, 960] #[w,h]
+    input_size: [592,444] #[w,h]
     keep_ratio: True
     pipeline:
       normalize: [[103.53, 116.28, 123.675], [57.375, 57.12, 58.395]]

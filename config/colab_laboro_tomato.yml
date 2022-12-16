@@ -77,7 +77,7 @@ data:
 device:
   gpu_ids: [0]
   workers_per_gpu: 12
-  batchsize_per_gpu: 128
+  batchsize_per_gpu: 100
 schedule:
   # resume:
     # load_model: /content/drive/MyDrive/nanodet_m_laboro/model_best/model_best.ckpt

@@ -49,7 +49,7 @@ data:
     ann_path: /content/drive/MyDrive/datasets/laboro_tomato/annotations/train.json  #Please fill in train xml path
     # input_size: [1280, 960] #[w,h]
     # input_size: [592, 444] #[w,h]
-    input_size: [960, 960] #[w,h]
+    input_size: [320, 320] #[w,h]
     keep_ratio: True
     pipeline:
       perspective: 0.0
@@ -69,7 +69,7 @@ data:
     img_path: /content/drive/MyDrive/datasets/laboro_tomato/train/ #Please fill in val image path
     ann_path: /content/drive/MyDrive/datasets/laboro_tomato/annotations/valid.json #Please fill in val xml path
     # input_size: [1280, 960] #[w,h]
-    input_size: [960, 960] #[w,h]
+    input_size: [320, 320] #[w,h]
     # input_size: [592, 444] #[w,h]
     keep_ratio: True
     pipeline:
